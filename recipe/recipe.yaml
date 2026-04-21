@@ -1,5 +1,5 @@
 context:
-  version: "0.8.12"
+  version: "0.9.0"
 
 package:
   name: apm-cli
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/apm-cli/apm_cli-${{ version }}.tar.gz
-  sha256: 30e43270061d2a0c50791526b824c450061aa4b111e1fd3efea9403a41540de5
+  sha256: f692b87bf2dccc63cd67a1e9e3032146c04591d8ca498cf142db7920f34a8a7e
 
 build:
   noarch: python
