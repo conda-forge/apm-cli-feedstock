@@ -1,0 +1,13 @@
+--- a/src/apm_cli/update_policy.py
++++ b/src/apm_cli/update_policy.py
+@@ -15,8 +15,8 @@
+ # Packagers can patch these constants during build, for example:
+ # - SELF_UPDATE_ENABLED = False
+ # - SELF_UPDATE_DISABLED_MESSAGE = "Update with: pixi update apm-cli"
+-SELF_UPDATE_ENABLED = True
+-SELF_UPDATE_DISABLED_MESSAGE = DEFAULT_SELF_UPDATE_DISABLED_MESSAGE
++SELF_UPDATE_ENABLED = False
++SELF_UPDATE_DISABLED_MESSAGE = "Update with: conda update apm-cli / pixi update apm-cli"
+
+
+ def _is_printable_ascii(value: str) -> bool:

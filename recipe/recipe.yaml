@@ -8,11 +8,13 @@ package:
 source:
   url: https://pypi.org/packages/source/a/apm-cli/apm_cli-${{ version }}.tar.gz
   sha256: 85687c034fb42e32d18d52aacb86b0429fbaff3dfc2430fdd7acc73ce301c473
+  patches: 
+    - update-policy.patch
 
 build:
   noarch: python
   script: python -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   python:
     entry_points:
       - apm = apm_cli.cli:main
