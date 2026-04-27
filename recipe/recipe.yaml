@@ -1,5 +1,5 @@
 context:
-  version: "0.9.3"
+  version: "0.9.4"
 
 package:
   name: apm-cli
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/apm-cli/apm_cli-${{ version }}.tar.gz
-  sha256: 4bf16be9e932e98a1a13d8c33f153340c803546a4a9e70409116142c1977940a
+  sha256: fe7c0ba5a57dd16fe5d5ad3437a5076f981c6650486b1f471659ee1d06fabfef
   patches:
     - update-policy.patch
 
