@@ -1,5 +1,5 @@
 context:
-  version: "0.25.0"
+  version: "0.26.0"
 
 package:
   name: apm-cli
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/apm-cli/apm_cli-${{ version }}.tar.gz
-  sha256: efa09f0275167795d71807efa6243ab9af19d048381e7c17f8ea263894d9a954
+  sha256: 24e6e4d346fb1d2ecbed05bb4205c3d99b284619344daf4007913985af488afb
   patches:
     - update-policy.patch
 
@@ -31,6 +31,7 @@ requirements:
     - colorama >=0.4.6
     - pyyaml >=6.0.0
     - requests >=2.31.0
+    - truststore >=0.10.0
     - python-frontmatter >=1.0.0
     - llm >=0.28
     - llm-github-models >=0.18.0
